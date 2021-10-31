@@ -1,0 +1,102 @@
+<!Doctype html>
+<html>
+    <head>
+        <style>
+            h1
+            {
+                background-color:aqua;
+            }
+            td
+            {
+                width:500px;
+            }
+            .txt
+            {
+                width:200px;
+            }
+			.txt1{width:200px;}
+            .txt:hover
+            {
+                border-color:yellow;
+            }
+	
+            #button
+            {
+               
+                background-color:yellow;
+                border-style:groove;
+                border-width:2px;
+                border-color:green;
+				width: 100%;
+            }
+			#a1{ background-color: pink;}
+			#a2{
+				border: 2px dotted green;
+				outline:2px;
+				outline-style:solid;
+				outline-color: red;
+				outline-offset: 10px;
+				margin: 100px auto 0 auto;
+				width: 800px;
+				
+				}
+				a{text-decoration: none; color: aqua;}
+				input[type="checkbox"]:checked + label{color:red;}
+				select option{color:orange;}
+			</style>
+			
+    <body bgcolor="grey">
+		<div id="a2">
+        <h1>Form required for Approval</h1>
+        <table>
+        <tr><td>Please Fill your information.</td><td style="text-align:right"> For More Information<a href="#" >Click Here...</a></td></tr></table> 
+		<div id="a1">
+        <table cellpadding="5">
+			<tr>
+                <td>Name : </td>
+                <td><input type="text" placeholder="Enter your name here" class="txt1"></td>
+            </tr>
+            
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <select class="txt">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </td>
+            </tr>
+            
+             <tr>
+                <td>Age:</td>
+                <td><input type="number" placeholder="28" min="18" max="50" class="txt" required></td>
+            </tr>
+            
+            <tr>
+                <td>Name of Landlord/ Neighbor : </td>
+                <td><input type="text" placeholder="Enter your Landlord's/Neighbor's name here" class="txt1"></td>
+            </tr>
+            
+            <tr>
+                <td>Mobile Number of Landlord/ Neighbor : </td>
+                <td><input type="number" maxlength="10" class="txt1"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    Address : 
+                </td>
+               <td>
+                <textarea cols = "25" rows = "4" ></textarea>
+               </td> 
+            </tr>
+
+            <tr>
+                <td colspan="2"><input type="button" value="SUBMIT" id="button"></td>
+            </tr>
+        </table>
+		</div>
+		</div>
+    </body>
+</html>
